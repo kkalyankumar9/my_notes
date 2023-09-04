@@ -3,6 +3,7 @@ const { connection } = require("./db");
 const { userRoutes } = require("./routes/userRoutes");
 const { notesRoutes } = require("./routes/notesRoutes");
 const jwt = require("jsonwebtoken");
+const { NotesModel } = require("../models/notesModel");
 const app = express();
 const cors = require('cors')
 app.use(cors())
